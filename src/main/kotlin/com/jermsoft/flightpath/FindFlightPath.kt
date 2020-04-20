@@ -73,6 +73,7 @@ fun main(args: Array<String>) {
     val bestSolution = Solutions.bestOf(solutions)
     SolutionPrinter.print(bestSolution)
 
+    createOutputFolder()
     val plotter: Plotter = Plotter(problem, bestSolution)
     plotter.setLabel(Label.ID)
     plotter.plot("output/solution.png", "Socal Sectional Route Plans")
